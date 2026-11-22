@@ -4,10 +4,10 @@ Repositório adaptado e otimizado da suíte de plugins para o ecossistema **Anti
 
 ---
 
-## 🌟 Novo por aqui ou não entende de programação?
+## 🧭 Guias Rápidos & Documentação
 
-> **Leia primeiro o nosso [📘 Guia Prático para Iniciantes e Não Programadores](GUIA_PRATICO.md)**  
-> Descubra como este repositório transforma a IA em uma equipe completa de engenharia que trabalha para você, sem que você precise digitar uma linha de código!
+* 📘 **[Guia Prático para Iniciantes e Não Programadores](GUIA_PRATICO.md):** Aprenda como usar todo este potencial sem precisar escrever uma linha de código.
+* 📚 **[Catálogo Completo dos 57 Plugins (Pra que serve e Quando usar)](PLUGINS.md):** Lista detalhada de cada plugin com exemplos de comandos prontos para você copiar e colar.
 
 ---
 
@@ -31,12 +31,13 @@ Este repositório contém **57 plugins e utilitários de engenharia**, agora 100
 
 ---
 
-## 📦 Estrutura dos Plugins
+## 📦 Estrutura dos Arquivos
 
 ```text
 Antigravity-plugins/
 ├── GUIA_PRATICO.md           # Guia didático passo a passo para iniciantes
-├── plugins/
+├── PLUGINS.md                # Catálogo detalhado dos 57 plugins (o que faz, quando usar e exemplos)
+├── plugins/                  # Pasta com todos os 57 plugins adaptados
 │   ├── code-review/          # Revisão cirúrgica de código e PRs com agentes avaliadores
 │   ├── feature-dev/          # Arquitetura, exploração e implementação ponta-a-ponta
 │   ├── pr-review-toolkit/    # Subagentes especializados para erros, tipos e testes em PRs
@@ -80,24 +81,21 @@ Exemplo para instalar apenas o plugin de desenvolvimento de features:
 .\install.ps1 -PluginName feature-dev
 ```
 
-Ou o kit de revisão de PRs:
-```powershell
-.\install.ps1 -PluginName pr-review-toolkit
-```
-
 ---
 
-## 🧩 Principais Plugins em Destaque
+## 🧩 Resumo Rápido dos Plugins Mais Populares
 
 | Plugin | Para que serve? | Quando usar? |
 | :--- | :--- | :--- |
-| **`feature-dev`** | Conduz o desenvolvimento de novos projetos e recursos do início ao fim. | Sempre que quiser criar uma ideia ou recurso novo. |
-| **`code-review`** | Executa auditoria minuciosa com alta precisão e sem falsos alarmes. | Antes de publicar ou quando quiser validar se há bugs. |
-| **`pr-review-toolkit`** | Conjunto de subagentes para validação profunda de código em PRs. | Em revisões profundas de código e alterações. |
-| **`code-simplifier`** | Refatora e reduz código confuso mantendo o funcionamento idêntico. | Quando o projeto estiver grande, bagunçado ou lento. |
-| **`commit-commands`** | Padroniza e automatiza mensagens de salvamento no Git e no GitHub. | Para salvar o trabalho com histórico limpo. |
-| **`security-guidance`** | Protege seu sistema contra vazamento de senhas e brechas. | Antes de colocar qualquer aplicação no ar. |
-| **`playwright`** | Abre o navegador e clica nos botões para testar de verdade. | Para checar se telas e formulários funcionam. |
+| **`feature-dev`** | Conduz o desenvolvimento de novos projetos e recursos do início ao fim. | Sempre que quiser criar uma ideia ou recurso novo do zero. |
+| **`code-review`** | Executa auditoria minuciosa com alta precisão e sem falsos alarmes. | Antes de publicar ou quando quiser validar se há bugs no código. |
+| **`code-simplifier`** | Refatora e reduz código confuso mantendo o funcionamento idêntico. | Quando o código estiver grande, redundante ou bagunçado. |
+| **`commit-commands`** | Padroniza e automatiza mensagens de salvamento no Git e no GitHub. | Para salvar o trabalho com histórico limpo e profissional. |
+| **`frontend-design`** | Ensina a IA diretrizes visuais modernas e acessíveis. | Ao desenhar interfaces, botões, formulários e layouts web. |
+| **`security-guidance`** | Protege seu sistema contra vazamento de senhas e brechas. | Antes de colocar qualquer aplicação no ar ou expor dados. |
+| **`playwright`** | Abre o navegador e clica nos botões para testar de verdade. | Para checar se telas e formulários funcionam na prática. |
+
+*(Consulte o documento **[PLUGINS.md](PLUGINS.md)** para ver os detalhes e exemplos de todos os 57 plugins).*
 
 ---
 
