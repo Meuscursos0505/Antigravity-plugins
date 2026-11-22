@@ -743,6 +743,22 @@
     "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/session-report"
   },
   {
+    "name": "siteantigravity",
+    "version": "1.0.0",
+    "description": "Orquestrador definitivo de criação de sites de alto padrão em 6 fases (Planejamento, Design Awwwards, Construção, Testes, Auditoria e DevOps)",
+    "author": {
+      "name": "Antigravity Plugins Suite",
+      "url": "https://github.com/Meuscursos0505/Antigravity-plugins"
+    },
+    "compatibility": "antigravity",
+    "commands": [
+      {
+        "name": "siteantigravity",
+        "description": "Cria um site completo de alto nível executando as 6 fases orquestradas de engenharia e design"
+      }
+    ]
+  },
+  {
     "name": "skill-creator",
     "version": "1.0.0",
     "description": "Create new skills, improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, update or optimize an existing skill, run evals to test a skill, or benchmark skill performance with variance analysis.",

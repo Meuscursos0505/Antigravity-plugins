@@ -13,8 +13,9 @@ Repositório adaptado e otimizado da suíte de plugins para o ecossistema **Anti
 
 ## 🚀 Visão Geral
 
-Este repositório contém **57 plugins e utilitários de engenharia**, agora 100% integrados e reformatados para o ecossistema Antigravity:
+Este repositório contém **58 plugins e utilitários de engenharia**, agora 100% integrados e reformatados para o ecossistema Antigravity:
 
+* **Super Orquestrador `/siteantigravity`:** Criação de sites completos de classe mundial em 6 fases de ponta a ponta.
 * **Subagentes Especializados:** Arquitetos de software, revisores de PRs, exploradores de código e simplificadores adaptados para os modelos Antigravity (Flash-Lite, Flash, Pro).
 * **Skills Nativas (`SKILL.md`):** Manuais operacionais e diretrizes técnicas diretamente utilizáveis pelas skills nativas do Antigravity.
 * **Ferramentas MCP (Model Context Protocol):** Conectores prontos para Playwright, GitHub, GitLab, Firebase, Linear, Discord e muito mais.

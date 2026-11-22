@@ -1,6 +1,19 @@
-# 📚 Catálogo Completo dos 57 Plugins: Pra que serve e Quando usar
+# 📚 Catálogo Completo dos 58 Plugins: Pra que serve e Quando usar
 
-Este catálogo documenta todos os **57 plugins disponíveis** no repositório, organizados por finalidade com exemplos práticos de comandos e frases para você copiar e colar no chat do Antigravity.
+> 🌟 **Destaque Especial - `/siteantigravity`:**
+> Se você quer criar um site do zero sem se preocupar com comandos avulsos, basta digitar:
+> `/siteantigravity Crie um site sobre [seu tema aqui]`
+> Esse comando dispara automaticamente o fluxo completo em 6 fases de engenharia e design de alto padrão (Awwwards).
+
+Este catálogo documenta todos os **58 plugins disponíveis** no repositório, organizados por finalidade com exemplos práticos de comandos e frases para você copiar e colar no chat do Antigravity.
+
+---
+
+## 🌟 0. Super Orquestrador de Sites
+
+| Plugin | Para que serve? | Quando usar? | Exemplo de como pedir no Chat |
+| :--- | :--- | :--- | :--- |
+| **`siteantigravity`** | **Orquestrador completo de criação de sites em 6 fases** (Planejamento, Design Awwwards, Construção, Testes de Navegador, Auditoria e DevOps). | Sempre que quiser criar um site completo, profissional e testado com um único comando. | `/siteantigravity Crie uma landing page moderna para consultoria jurídica` |
 
 ---
 

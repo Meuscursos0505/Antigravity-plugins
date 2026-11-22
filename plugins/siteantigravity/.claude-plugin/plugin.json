@@ -1,0 +1,16 @@
+{
+  "name": "siteantigravity",
+  "version": "1.0.0",
+  "description": "Orquestrador definitivo de criação de sites de alto padrão em 6 fases (Planejamento, Design Awwwards, Construção, Testes, Auditoria e DevOps)",
+  "author": {
+    "name": "Antigravity Plugins Suite",
+    "url": "https://github.com/Meuscursos0505/Antigravity-plugins"
+  },
+  "compatibility": "antigravity",
+  "commands": [
+    {
+      "name": "siteantigravity",
+      "description": "Cria um site completo de alto nível executando as 6 fases orquestradas de engenharia e design"
+    }
+  ]
+}
