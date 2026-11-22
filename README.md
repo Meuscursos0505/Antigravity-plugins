@@ -1,6 +1,13 @@
-﻿# Antigravity Plugins Suite
+# Antigravity Plugins Suite
 
 Repositório adaptado e otimizado da suíte de plugins para o ecossistema **Antigravity** (Google DeepMind / Gemini CLI & IDE).
+
+---
+
+## 🌟 Novo por aqui ou não entende de programação?
+
+> **Leia primeiro o nosso [📘 Guia Prático para Iniciantes e Não Programadores](GUIA_PRATICO.md)**  
+> Descubra como este repositório transforma a IA em uma equipe completa de engenharia que trabalha para você, sem que você precise digitar uma linha de código!
 
 ---
 
@@ -15,10 +22,20 @@ Este repositório contém **57 plugins e utilitários de engenharia**, agora 100
 
 ---
 
+## 💡 O que é cada elemento? (Glossário Simples)
+
+* 🧰 **Plugin:** Uma caixa de ferramentas temática completa (ex: um pacote só para desenvolvimento de novas telas ou só para segurança).
+* 📖 **Skill (Habilidade):** Um manual com instruções passo a passo e regras rigorosas que ensinam a IA a executar tarefas sem cometer erros.
+* 🤖 **Subagente:** Um especialista dedicado que a IA principal chama para tarefas focadas (ex: um arquiteto para planejar ou um revisor para auditar).
+* 🔌 **MCP (Model Context Protocol):** Conexões externas que permitem à IA controlar programas reais (navegador web, GitHub, banco de dados, etc.).
+
+---
+
 ## 📦 Estrutura dos Plugins
 
 ```text
 Antigravity-plugins/
+├── GUIA_PRATICO.md           # Guia didático passo a passo para iniciantes
 ├── plugins/
 │   ├── code-review/          # Revisão cirúrgica de código e PRs com agentes avaliadores
 │   ├── feature-dev/          # Arquitetura, exploração e implementação ponta-a-ponta
@@ -72,16 +89,15 @@ Ou o kit de revisão de PRs:
 
 ## 🧩 Principais Plugins em Destaque
 
-| Plugin | Descrição | Componentes |
+| Plugin | Para que serve? | Quando usar? |
 | :--- | :--- | :--- |
-| **`feature-dev`** | Conduz o desenvolvimento de novas funcionalidades desde a análise arquitetural até o review. | `agents/` (`code-architect`, `code-explorer`, `code-reviewer`), `skills/` |
-| **`code-review`** | Executa auditoria minuciosa em pull requests com filtragem de falso positivo e alta precisão. | `commands/`, `skills/` |
-| **`pr-review-toolkit`** | Conjunto de subagentes para validação profunda de código em PRs. | `agents/`, `skills/` |
-| **`code-simplifier`** | Refatora e reduz duplicações e código confuso mantendo a corretude do comportamento. | `agents/`, `skills/` |
-| **`commit-commands`** | Padronização de mensagens de commit e automação de push e criação de PRs. | `commands/`, `skills/` |
-| **`security-guidance`** | Padrões de segurança defensiva para desenvolvimento de APIs e frontends. | `hooks/`, `skills/` |
-| **`playwright`** | Automação e testes ponta-a-ponta com navegador via servidor MCP. | `.mcp.json`, `skills/` |
-| **`github` & `gitlab`** | Gestão de issues, revisões e pull requests integrado via MCP. | `.mcp.json` |
+| **`feature-dev`** | Conduz o desenvolvimento de novos projetos e recursos do início ao fim. | Sempre que quiser criar uma ideia ou recurso novo. |
+| **`code-review`** | Executa auditoria minuciosa com alta precisão e sem falsos alarmes. | Antes de publicar ou quando quiser validar se há bugs. |
+| **`pr-review-toolkit`** | Conjunto de subagentes para validação profunda de código em PRs. | Em revisões profundas de código e alterações. |
+| **`code-simplifier`** | Refatora e reduz código confuso mantendo o funcionamento idêntico. | Quando o projeto estiver grande, bagunçado ou lento. |
+| **`commit-commands`** | Padroniza e automatiza mensagens de salvamento no Git e no GitHub. | Para salvar o trabalho com histórico limpo. |
+| **`security-guidance`** | Protege seu sistema contra vazamento de senhas e brechas. | Antes de colocar qualquer aplicação no ar. |
+| **`playwright`** | Abre o navegador e clica nos botões para testar de verdade. | Para checar se telas e formulários funcionam. |
 
 ---
 

@@ -1,4 +1,4 @@
-﻿# Script de instalacao de plugins para o Antigravity
+# Script de instalacao de plugins para o Antigravity
 param (
     [string]$PluginName = "",
     [switch]$All = $false,
