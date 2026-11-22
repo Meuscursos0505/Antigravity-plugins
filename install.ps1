@@ -19,14 +19,14 @@ if (-not (Test-Path $targetSkillsDir)) {
 $pluginsSourceDir = Join-Path $currentDir "plugins"
 
 if (-not (Test-Path $pluginsSourceDir)) {
-    Write-Error "Diretório de plugins não encontrado: $pluginsSourceDir"
+    Write-Error "DiretÃ³rio de plugins nÃ£o encontrado: $pluginsSourceDir"
     exit 1
 }
 
 function Install-SinglePlugin($name) {
     $src = Join-Path $pluginsSourceDir $name
     if (-not (Test-Path $src)) {
-        Write-Warning "Plugin não encontrado: $name"
+        Write-Warning "Plugin nÃ£o encontrado: $name"
         return
     }
     
@@ -44,7 +44,7 @@ function Install-SinglePlugin($name) {
     } else {
         $dest = Join-Path $targetPluginsDir $name
         Copy-Item -Path $src -Destination $dest -Recurse -Force
-        Write-Host "[✓] Plugin instalado com sucesso: $name em $dest" -ForegroundColor Green
+        Write-Host "[âœ“] Plugin instalado com sucesso: $name em $dest" -ForegroundColor Green
     }
 }
 
@@ -61,6 +61,7 @@ if ($All) {
     Write-Host "  .\install-plugin.ps1 -PluginName <nome-do-plugin>"
     Write-Host "  .\install-plugin.ps1 -All"
     Write-Host "  .\install-plugin.ps1 -All -InstallSkillsOnly"
-    Write-Host "`nPlugins disponíveis:"
+    Write-Host "`nPlugins disponÃ­veis:"
     Get-ChildItem -Directory $pluginsSourceDir | Select-Object -ExpandProperty Name | ForEach-Object { Write-Host " - $_" }
 }
+
