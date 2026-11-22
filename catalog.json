@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "name": "agent-sdk-dev",
     "version": "1.0.1",
@@ -8,6 +8,16 @@
     },
     "compatibility": "antigravity",
     "originalSource": "anthropics/claude-plugins-official/plugins/agent-sdk-dev"
+  },
+  {
+    "name": "asana",
+    "version": "1.0.0",
+    "description": "Asana project management integration. Connects Claude Code to Asana's V2 MCP server (https://mcp.asana.com/v2/mcp) to create and manage tasks, search projects, update assignments, and track progress. Requires a one-time setup of your own Asana OAuth app — run /asana-setup after installing.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/asana"
   },
   {
     "name": "champion-kit",
@@ -219,6 +229,16 @@
     "originalSource": "anthropics/claude-plugins-official/plugins/commit-commands"
   },
   {
+    "name": "context7",
+    "version": "1.0.0",
+    "description": "Upstash Context7 MCP server for up-to-date documentation lookup. Connects to Context7's hosted remote MCP server (https://mcp.context7.com/mcp) — no local Node.js or npx required — to pull version-specific documentation and code examples directly from source repositories into your LLM context. Authenticate with Context7 when prompted.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/context7"
+  },
+  {
     "name": "csharp-lsp",
     "version": "1.0.0",
     "description": "C# language server for code intelligence",
@@ -259,6 +279,22 @@
     ]
   },
   {
+    "name": "discord",
+    "version": "0.0.6",
+    "description": "Discord channel for Claude Code — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /discord:access.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/discord",
+    "keywords": [
+      "discord",
+      "messaging",
+      "channel",
+      "mcp"
+    ]
+  },
+  {
     "name": "example-plugin",
     "version": "1.0.0",
     "description": "A comprehensive example plugin demonstrating all Claude Code extension options including commands, agents, skills, hooks, and MCP servers",
@@ -279,6 +315,24 @@
     "originalSource": "anthropics/claude-plugins-official/plugins/explanatory-output-style"
   },
   {
+    "name": "fakechat",
+    "version": "0.0.1",
+    "description": "Localhost iMessage-style web chat for Claude Code — test surface with file upload and edits. No tokens, no access control.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/fakechat",
+    "keywords": [
+      "fakechat",
+      "web",
+      "localhost",
+      "testing",
+      "channel",
+      "mcp"
+    ]
+  },
+  {
     "name": "feature-dev",
     "version": "1.0.1",
     "description": "Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review",
@@ -289,6 +343,16 @@
     "originalSource": "anthropics/claude-plugins-official/plugins/feature-dev"
   },
   {
+    "name": "firebase",
+    "version": "1.0.0",
+    "description": "Google Firebase MCP integration. Manage Firestore databases, authentication, cloud functions, hosting, and storage. Build and manage your Firebase backend directly from your development workflow.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/firebase"
+  },
+  {
     "name": "frontend-design",
     "version": "1.1.1",
     "description": "Frontend design skill for UI/UX implementation",
@@ -297,6 +361,26 @@
     },
     "compatibility": "antigravity",
     "originalSource": "anthropics/claude-plugins-official/plugins/frontend-design"
+  },
+  {
+    "name": "github",
+    "version": "1.0.0",
+    "description": "Official GitHub MCP server for repository management. Create issues, manage pull requests, review code, search repositories, and interact with GitHub's full API directly from Claude Code.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/github"
+  },
+  {
+    "name": "gitlab",
+    "version": "1.0.0",
+    "description": "GitLab DevOps platform integration. Manage repositories, merge requests, CI/CD pipelines, issues, and wikis. Full access to GitLab's comprehensive DevOps lifecycle tools.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/gitlab"
   },
   {
     "name": "gopls-lsp",
@@ -325,6 +409,22 @@
     },
     "compatibility": "antigravity",
     "originalSource": "anthropics/claude-plugins-official/plugins/hookify"
+  },
+  {
+    "name": "imessage",
+    "version": "0.2.0",
+    "description": "iMessage channel for Claude Code — reads chat.db directly, sends via AppleScript. Built-in access control; manage pairing, allowlists, and policy via /imessage:access.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/imessage",
+    "keywords": [
+      "imessage",
+      "messaging",
+      "channel",
+      "mcp"
+    ]
   },
   {
     "name": "jdtls-lsp",
@@ -369,6 +469,16 @@
     }
   },
   {
+    "name": "laravel-boost",
+    "version": "1.0.0",
+    "description": "Laravel development toolkit MCP server. Provides intelligent assistance for Laravel applications including Artisan commands, Eloquent queries, routing, migrations, and framework-specific code generation.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/laravel-boost"
+  },
+  {
     "name": "learning-output-style",
     "version": "1.0.1",
     "description": "Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style)",
@@ -377,6 +487,16 @@
     },
     "compatibility": "antigravity",
     "originalSource": "anthropics/claude-plugins-official/plugins/learning-output-style"
+  },
+  {
+    "name": "linear",
+    "version": "1.0.0",
+    "description": "Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/linear"
   },
   {
     "name": "lua-lsp",
@@ -419,7 +539,7 @@
   {
     "name": "mcp-server-dev",
     "version": "1.0.0",
-    "description": "Skills for designing and building MCP servers that work seamlessly with Claude â€” guides you through deployment models (remote HTTP, MCPB, local), tool design patterns, auth, and interactive MCP apps.",
+    "description": "Skills for designing and building MCP servers that work seamlessly with Claude — guides you through deployment models (remote HTTP, MCPB, local), tool design patterns, auth, and interactive MCP apps.",
     "author": {
       "name": "Anthropic (Adapted for Antigravity)"
     },
@@ -460,12 +580,22 @@
   {
     "name": "playground",
     "version": "1.0.0",
-    "description": "Creates interactive HTML playgrounds â€” self-contained single-file explorers with visual controls, live preview, and prompt output with copy button",
+    "description": "Creates interactive HTML playgrounds — self-contained single-file explorers with visual controls, live preview, and prompt output with copy button",
     "author": {
       "name": "Anthropic (Adapted for Antigravity)"
     },
     "compatibility": "antigravity",
     "originalSource": "anthropics/claude-plugins-official/plugins/playground"
+  },
+  {
+    "name": "playwright",
+    "version": "1.0.0",
+    "description": "Browser automation and end-to-end testing MCP server by Microsoft. Enables Claude to interact with web pages, take screenshots, fill forms, click elements, and perform automated browser testing workflows.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/playwright"
   },
   {
     "name": "plugin-dev",
@@ -490,7 +620,7 @@
   {
     "name": "project-artifact",
     "version": "1.0.0",
-    "description": "Generate and publish a project status artifact â€” an opinionated, tabbed status page (overview & success criteria, the workstream sequence, next steps, plus background / plan / risks & open questions / decisions-FAQ when they earn a tab) published via the built-in Artifact tool to a default-private claude.ai page the user can share with teammates. Each artifact is backed by a per-project config, so 'refresh the artifact' re-gathers live state, redeploys the same URL, and reports only the delta. Domain-neutral, with a software specialization for projects whose workstreams are pull requests. Needs the built-in Artifact tool (claude.ai login).",
+    "description": "Generate and publish a project status artifact — an opinionated, tabbed status page (overview & success criteria, the workstream sequence, next steps, plus background / plan / risks & open questions / decisions-FAQ when they earn a tab) published via the built-in Artifact tool to a default-private claude.ai page the user can share with teammates. Each artifact is backed by a per-project config, so 'refresh the artifact' re-gathers live state, redeploys the same URL, and reports only the delta. Domain-neutral, with a software specialization for projects whose workstreams are pull requests. Needs the built-in Artifact tool (claude.ai login).",
     "author": {
       "name": "Anthropic (Adapted for Antigravity)"
     },
@@ -592,9 +722,19 @@
     "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance"
   },
   {
+    "name": "serena",
+    "version": "1.0.0",
+    "description": "Semantic code analysis MCP server providing intelligent code understanding, refactoring suggestions, and codebase navigation through language server protocol integration.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/serena"
+  },
+  {
     "name": "session-report",
     "version": "1.0.0",
-    "description": "Generate an explorable HTML report of Claude Code session usage â€” tokens, cache efficiency, subagents, skills, and the most expensive prompts â€” from local ~/.claude/projects transcripts.",
+    "description": "Generate an explorable HTML report of Claude Code session usage — tokens, cache efficiency, subagents, skills, and the most expensive prompts — from local ~/.claude/projects transcripts.",
     "author": {
       "name": "Anthropic (Adapted for Antigravity)"
     },
@@ -629,6 +769,32 @@
         }
       }
     }
+  },
+  {
+    "name": "telegram",
+    "version": "0.0.7",
+    "description": "Telegram channel for Claude Code — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /telegram:access.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/telegram",
+    "keywords": [
+      "telegram",
+      "messaging",
+      "channel",
+      "mcp"
+    ]
+  },
+  {
+    "name": "terraform",
+    "version": "1.0.0",
+    "description": "The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/terraform"
   },
   {
     "name": "theme-examples",
@@ -669,171 +835,5 @@
         }
       }
     }
-  },
-  {
-    "name": "asana",
-    "version": "1.0.0",
-    "description": "Asana project management integration. Connects Claude Code to Asana's V2 MCP server (https://mcp.asana.com/v2/mcp) to create and manage tasks, search projects, update assignments, and track progress. Requires a one-time setup of your own Asana OAuth app â€” run /asana-setup after installing.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/asana"
-  },
-  {
-    "name": "context7",
-    "version": "1.0.0",
-    "description": "Upstash Context7 MCP server for up-to-date documentation lookup. Connects to Context7's hosted remote MCP server (https://mcp.context7.com/mcp) â€” no local Node.js or npx required â€” to pull version-specific documentation and code examples directly from source repositories into your LLM context. Authenticate with Context7 when prompted.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/context7"
-  },
-  {
-    "name": "discord",
-    "version": "0.0.6",
-    "description": "Discord channel for Claude Code â€” messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /discord:access.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/discord",
-    "keywords": [
-      "discord",
-      "messaging",
-      "channel",
-      "mcp"
-    ]
-  },
-  {
-    "name": "fakechat",
-    "version": "0.0.1",
-    "description": "Localhost iMessage-style web chat for Claude Code â€” test surface with file upload and edits. No tokens, no access control.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/fakechat",
-    "keywords": [
-      "fakechat",
-      "web",
-      "localhost",
-      "testing",
-      "channel",
-      "mcp"
-    ]
-  },
-  {
-    "name": "firebase",
-    "version": "1.0.0",
-    "description": "Google Firebase MCP integration. Manage Firestore databases, authentication, cloud functions, hosting, and storage. Build and manage your Firebase backend directly from your development workflow.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/firebase"
-  },
-  {
-    "name": "github",
-    "version": "1.0.0",
-    "description": "Official GitHub MCP server for repository management. Create issues, manage pull requests, review code, search repositories, and interact with GitHub's full API directly from Claude Code.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/github"
-  },
-  {
-    "name": "gitlab",
-    "version": "1.0.0",
-    "description": "GitLab DevOps platform integration. Manage repositories, merge requests, CI/CD pipelines, issues, and wikis. Full access to GitLab's comprehensive DevOps lifecycle tools.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/gitlab"
-  },
-  {
-    "name": "imessage",
-    "version": "0.2.0",
-    "description": "iMessage channel for Claude Code â€” reads chat.db directly, sends via AppleScript. Built-in access control; manage pairing, allowlists, and policy via /imessage:access.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/imessage",
-    "keywords": [
-      "imessage",
-      "messaging",
-      "channel",
-      "mcp"
-    ]
-  },
-  {
-    "name": "laravel-boost",
-    "version": "1.0.0",
-    "description": "Laravel development toolkit MCP server. Provides intelligent assistance for Laravel applications including Artisan commands, Eloquent queries, routing, migrations, and framework-specific code generation.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/laravel-boost"
-  },
-  {
-    "name": "linear",
-    "version": "1.0.0",
-    "description": "Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/linear"
-  },
-  {
-    "name": "playwright",
-    "version": "1.0.0",
-    "description": "Browser automation and end-to-end testing MCP server by Microsoft. Enables Claude to interact with web pages, take screenshots, fill forms, click elements, and perform automated browser testing workflows.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/playwright"
-  },
-  {
-    "name": "serena",
-    "version": "1.0.0",
-    "description": "Semantic code analysis MCP server providing intelligent code understanding, refactoring suggestions, and codebase navigation through language server protocol integration.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/serena"
-  },
-  {
-    "name": "telegram",
-    "version": "0.0.7",
-    "description": "Telegram channel for Claude Code â€” messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /telegram:access.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/telegram",
-    "keywords": [
-      "telegram",
-      "messaging",
-      "channel",
-      "mcp"
-    ]
-  },
-  {
-    "name": "terraform",
-    "version": "1.0.0",
-    "description": "The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development.",
-    "author": {
-      "name": "Anthropic (Adapted for Antigravity)"
-    },
-    "compatibility": "antigravity",
-    "originalSource": "anthropics/claude-plugins-official/external_plugins/terraform"
   }
 ]
