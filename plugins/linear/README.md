@@ -1,0 +1,5 @@
+# linear
+
+Adapted for Antigravity.
+
+Description: Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker.

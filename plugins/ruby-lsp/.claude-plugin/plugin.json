@@ -1,0 +1,22 @@
+{
+  "name": "ruby-lsp",
+  "version": "1.0.0",
+  "description": "Ruby language server for code intelligence and analysis",
+  "author": {
+    "name": "Anthropic (Adapted for Antigravity)"
+  },
+  "compatibility": "antigravity",
+  "originalSource": "anthropics/claude-plugins-official/plugins/ruby-lsp",
+  "lspServers": {
+    "ruby-lsp": {
+      "command": "ruby-lsp",
+      "extensionToLanguage": {
+        ".rb": "ruby",
+        ".rake": "ruby",
+        ".gemspec": "ruby",
+        ".ru": "ruby",
+        ".erb": "erb"
+      }
+    }
+  }
+}

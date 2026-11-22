@@ -1,0 +1,18 @@
+{
+  "name": "gopls-lsp",
+  "version": "1.0.0",
+  "description": "Go language server for code intelligence and refactoring",
+  "author": {
+    "name": "Anthropic (Adapted for Antigravity)"
+  },
+  "compatibility": "antigravity",
+  "originalSource": "anthropics/claude-plugins-official/plugins/gopls-lsp",
+  "lspServers": {
+    "gopls": {
+      "command": "gopls",
+      "extensionToLanguage": {
+        ".go": "go"
+      }
+    }
+  }
+}

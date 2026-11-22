@@ -1,0 +1,11 @@
+# Logs, temporarios e arquivos de ambiente
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+__pycache__/
+*.pyc
+.env
+.venv
+dist/
+build/

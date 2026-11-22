@@ -1,0 +1,839 @@
+[
+  {
+    "name": "agent-sdk-dev",
+    "version": "1.0.1",
+    "description": "Claude Agent SDK Development Plugin",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/agent-sdk-dev"
+  },
+  {
+    "name": "champion-kit",
+    "version": "0.5.0",
+    "description": "Help Claude Code champions run hackathons and office hours, find patterns worth sharing, help teammates climb the steps of AI adoption, and write a maturity report.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/champion-kit",
+    "homepage": "https://code.claude.com/docs/en/champion-kit",
+    "keywords": [
+      "champions",
+      "adoption",
+      "enablement",
+      "onboarding",
+      "claude-code"
+    ]
+  },
+  {
+    "name": "clangd-lsp",
+    "version": "1.0.0",
+    "description": "C/C++ language server (clangd) for code intelligence",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/clangd-lsp",
+    "lspServers": {
+      "clangd": {
+        "command": "clangd",
+        "args": [
+          "--background-index"
+        ],
+        "extensionToLanguage": {
+          ".c": "c",
+          ".h": "c",
+          ".cpp": "cpp",
+          ".cc": "cpp",
+          ".cxx": "cpp",
+          ".hpp": "cpp",
+          ".hxx": "cpp",
+          ".C": "cpp",
+          ".H": "cpp"
+        }
+      }
+    }
+  },
+  {
+    "name": "claude-code-setup",
+    "version": "1.0.0",
+    "description": "Analyze codebases and recommend tailored Claude Code automations such as hooks, skills, MCP servers, and subagents.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/claude-code-setup"
+  },
+  {
+    "name": "claude-for-manufacturing",
+    "version": "1.0.0",
+    "description": "The manufacturing plugin. Skills for the work a plant actually runs on: joining the exports and systems into one dataset, quoting make-to-order jobs from drawings, writing nonconformances and 8Ds, diagnosing breakdowns, and reporting the morning numbers. Works with Microsoft 365, Oracle NetSuite, Infor M3 and Autodesk Fusion once connected, connects anything else through custom-connector, and runs on scheduled file exports when a system has no connector at all. Install and then ask Claude to help you get onboarded.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/claude-for-manufacturing",
+    "displayName": "Claude for Manufacturing",
+    "keywords": [
+      "8d",
+      "capa",
+      "cmms",
+      "erp",
+      "manufacturing",
+      "mes",
+      "nonconformance",
+      "oee",
+      "operations",
+      "production",
+      "quality",
+      "quoting",
+      "supply-chain"
+    ]
+  },
+  {
+    "name": "claude-md-management",
+    "version": "1.0.0",
+    "description": "Tools to maintain and improve CLAUDE.md files - audit quality, capture session learnings, and keep project memory current.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/claude-md-management"
+  },
+  {
+    "name": "claude-security",
+    "version": "0.12.0",
+    "description": "Deep vulnerability scanning of your own code, run entirely inside your Claude Code session at a chosen effort tier, with every finding challenged before it is reported and the verification tally computed in code. Turns surviving findings into targeted patches, each verified by a panel of agents, that you apply when you choose. See the plugin README for the tiers, the report format, and the trust model.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/claude-security",
+    "license": "SEE LICENSE IN LICENSE",
+    "keywords": [
+      "security",
+      "vulnerability",
+      "scan",
+      "audit",
+      "appsec",
+      "code-review",
+      "remediation",
+      "autofix"
+    ]
+  },
+  {
+    "name": "code-modernization",
+    "version": "1.1.0",
+    "description": "Guided modernization for any legacy codebase: start with /modernize, get an assessment, an interactive map, the business rules mined from the code, and a plan you approve, then an upgrade, a rewrite or a rebuild with independent proof that the new code behaves like the old. Includes security hardening, a one-page report, specialist agents, and an optional live progress pane (early access).",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/code-modernization",
+    "userConfig": {
+      "system": {
+        "type": "string",
+        "title": "System",
+        "description": "The system under analysis/ to follow. Empty follows the first one found.",
+        "default": ""
+      },
+      "track": {
+        "type": "string",
+        "title": "Track to follow",
+        "description": "auto follows whichever way the plugin's commands are working on the system: a rewrite, a same-stack uplift or a greenfield reimagine, by the newest artifacts. Name one to pin it.",
+        "default": "auto",
+        "options": [
+          "auto",
+          "transform",
+          "uplift",
+          "reimagine"
+        ]
+      },
+      "panel": {
+        "type": "string",
+        "title": "Progress pane",
+        "description": "auto opens the pane when a session starts in a workspace that has analysis/; command opens it only when you press its button or type /modernize-panel; off never opens it and never draws the button.",
+        "default": "auto",
+        "options": [
+          "auto",
+          "command",
+          "off"
+        ]
+      },
+      "xray": {
+        "type": "boolean",
+        "title": "X-ray reads",
+        "description": "When Claude reads a legacy file, attach what the analysis already knows about it (callers, data it touches, the rules citing it) as context only the model sees.",
+        "default": true
+      },
+      "commandPrefix": {
+        "type": "string",
+        "title": "Command prefix",
+        "description": "How the plugin's commands are written up to their verb, for the pane's Next line.",
+        "default": "/code-modernization:modernize-"
+      },
+      "legacyDir": {
+        "type": "string",
+        "title": "Legacy directory",
+        "description": "The read-only tree holding the legacy systems, relative to the workspace.",
+        "default": "legacy"
+      },
+      "telemetry": {
+        "type": "boolean",
+        "title": "Usage counts",
+        "description": "Send usage counts through Claude Code's own telemetry setting: whole numbers only, such as which command ran, how many rules were found, what kind of machine and python the plugin runs on, and which kind of error occurred. Never code, names, paths, prompts or error text. Nothing is sent when Claude Code telemetry is off. See exactly what would be sent with: python3 scripts/telemetry.py show",
+        "default": true
+      }
+    }
+  },
+  {
+    "name": "code-review",
+    "version": "1.0.1",
+    "description": "Automated code review for pull requests using multiple specialized agents with confidence-based scoring",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/code-review"
+  },
+  {
+    "name": "code-simplifier",
+    "version": "1.0.0",
+    "description": "Agent that simplifies and refines code for clarity, consistency, and maintainability while preserving functionality",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/code-simplifier"
+  },
+  {
+    "name": "commit-commands",
+    "version": "1.0.1",
+    "description": "Streamline your git workflow with simple commands for committing, pushing, and creating pull requests",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/commit-commands"
+  },
+  {
+    "name": "csharp-lsp",
+    "version": "1.0.0",
+    "description": "C# language server for code intelligence",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/csharp-lsp",
+    "lspServers": {
+      "csharp-ls": {
+        "command": "csharp-ls",
+        "extensionToLanguage": {
+          ".cs": "csharp"
+        }
+      }
+    }
+  },
+  {
+    "name": "cwc-makers",
+    "version": "1.0.0",
+    "description": "Seamless onboarding for the Code-with-Claude Makers Cardputer: one /maker-setup command clones the build-with-claude repo, flashes UIFlow firmware, and installs the Claude Buddy app bundle onto a freshly-plugged-in M5Stack Cardputer-Adv.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/cwc-makers",
+    "homepage": "https://claude.com/cwc-makers",
+    "repository": "https://github.com/moremas/build-with-claude",
+    "license": "Apache-2.0",
+    "keywords": [
+      "cardputer",
+      "m5stack",
+      "esp32",
+      "hardware",
+      "maker",
+      "onboarding",
+      "cwc"
+    ]
+  },
+  {
+    "name": "example-plugin",
+    "version": "1.0.0",
+    "description": "A comprehensive example plugin demonstrating all Claude Code extension options including commands, agents, skills, hooks, and MCP servers",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/example-plugin"
+  },
+  {
+    "name": "explanatory-output-style",
+    "version": "1.0.1",
+    "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/explanatory-output-style"
+  },
+  {
+    "name": "feature-dev",
+    "version": "1.0.1",
+    "description": "Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/feature-dev"
+  },
+  {
+    "name": "frontend-design",
+    "version": "1.1.1",
+    "description": "Frontend design skill for UI/UX implementation",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/frontend-design"
+  },
+  {
+    "name": "gopls-lsp",
+    "version": "1.0.0",
+    "description": "Go language server for code intelligence and refactoring",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/gopls-lsp",
+    "lspServers": {
+      "gopls": {
+        "command": "gopls",
+        "extensionToLanguage": {
+          ".go": "go"
+        }
+      }
+    }
+  },
+  {
+    "name": "hookify",
+    "version": "0.1.1",
+    "description": "Easily create hooks to prevent unwanted behaviors by analyzing conversation patterns",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/hookify"
+  },
+  {
+    "name": "jdtls-lsp",
+    "version": "1.0.0",
+    "description": "Java language server (Eclipse JDT.LS) for code intelligence",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/jdtls-lsp",
+    "lspServers": {
+      "jdtls": {
+        "command": "jdtls",
+        "extensionToLanguage": {
+          ".java": "java"
+        },
+        "startupTimeout": 120000
+      }
+    }
+  },
+  {
+    "name": "kotlin-lsp",
+    "version": "1.0.0",
+    "description": "Kotlin language server for code intelligence",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/kotlin-lsp",
+    "lspServers": {
+      "kotlin-lsp": {
+        "command": "kotlin-lsp",
+        "args": [
+          "--stdio"
+        ],
+        "extensionToLanguage": {
+          ".kt": "kotlin",
+          ".kts": "kotlin"
+        },
+        "startupTimeout": 120000
+      }
+    }
+  },
+  {
+    "name": "learning-output-style",
+    "version": "1.0.1",
+    "description": "Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style)",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/learning-output-style"
+  },
+  {
+    "name": "lua-lsp",
+    "version": "1.0.0",
+    "description": "Lua language server for code intelligence",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/lua-lsp",
+    "lspServers": {
+      "lua": {
+        "command": "lua-language-server",
+        "extensionToLanguage": {
+          ".lua": "lua"
+        }
+      }
+    }
+  },
+  {
+    "name": "math-olympiad",
+    "version": "1.0.0",
+    "description": "Solve competition math (IMO, Putnam, USAMO) with adversarial verification that catches what self-verification misses. Fresh-context verifiers attack proofs with specific failure patterns. Calibrated abstention over bluffing.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/math-olympiad"
+  },
+  {
+    "name": "math-proof",
+    "version": "1.0.0",
+    "description": "Two skills for hard mathematics problems, each ending in a self-contained proof.md: /math-proof:solo has the session work the problem itself in stages with a notes file; /math-proof:siege works on it for hours in rounds of judge and worker sub-agents and says plainly what is and is not proved.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/math-proof"
+  },
+  {
+    "name": "mcp-server-dev",
+    "version": "1.0.0",
+    "description": "Skills for designing and building MCP servers that work seamlessly with Claude — guides you through deployment models (remote HTTP, MCPB, local), tool design patterns, auth, and interactive MCP apps.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/mcp-server-dev"
+  },
+  {
+    "name": "mcp-tunnels",
+    "version": "1.0.0",
+    "description": "Connect Claude to a private MCP server through an Anthropic MCP tunnel. Drives the Docker Compose quickstart end to end: certificates, proxy config, cloudflared, and a verifiable sample server.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/mcp-tunnels"
+  },
+  {
+    "name": "php-lsp",
+    "version": "1.0.0",
+    "description": "PHP language server (Intelephense) for code intelligence",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/php-lsp",
+    "lspServers": {
+      "intelephense": {
+        "command": "intelephense",
+        "args": [
+          "--stdio"
+        ],
+        "extensionToLanguage": {
+          ".php": "php"
+        }
+      }
+    }
+  },
+  {
+    "name": "playground",
+    "version": "1.0.0",
+    "description": "Creates interactive HTML playgrounds — self-contained single-file explorers with visual controls, live preview, and prompt output with copy button",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/playground"
+  },
+  {
+    "name": "plugin-dev",
+    "version": "0.1.2",
+    "description": "Plugin development toolkit with skills for creating agents, commands, hooks, MCP integrations, and comprehensive plugin structure guidance",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/plugin-dev"
+  },
+  {
+    "name": "pr-review-toolkit",
+    "version": "1.0.1",
+    "description": "Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/pr-review-toolkit"
+  },
+  {
+    "name": "project-artifact",
+    "version": "1.0.0",
+    "description": "Generate and publish a project status artifact — an opinionated, tabbed status page (overview & success criteria, the workstream sequence, next steps, plus background / plan / risks & open questions / decisions-FAQ when they earn a tab) published via the built-in Artifact tool to a default-private claude.ai page the user can share with teammates. Each artifact is backed by a per-project config, so 'refresh the artifact' re-gathers live state, redeploys the same URL, and reports only the delta. Domain-neutral, with a software specialization for projects whose workstreams are pull requests. Needs the built-in Artifact tool (claude.ai login).",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/project-artifact"
+  },
+  {
+    "name": "pyright-lsp",
+    "version": "1.0.0",
+    "description": "Python language server (Pyright) for type checking and code intelligence",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/pyright-lsp",
+    "lspServers": {
+      "pyright": {
+        "command": "pyright-langserver",
+        "args": [
+          "--stdio"
+        ],
+        "extensionToLanguage": {
+          ".py": "python",
+          ".pyi": "python"
+        }
+      }
+    }
+  },
+  {
+    "name": "ralph-loop",
+    "version": "1.0.1",
+    "description": "Continuous self-referential AI loops for interactive iterative development, implementing the Ralph Wiggum technique. Run Claude in a while-true loop with the same prompt until task completion.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/ralph-loop"
+  },
+  {
+    "name": "receipts",
+    "version": "1.0.0",
+    "description": "A personal Claude Code impact report for justifying your usage to a manager or a self-review: what you shipped, which projects it went to, and each project's share of your usage. Reads your ~/.claude/projects transcripts and runs read-only git locally; only counts and project names are sent to write it up, and the report stays on your machine.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/receipts",
+    "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/receipts"
+  },
+  {
+    "name": "ruby-lsp",
+    "version": "1.0.0",
+    "description": "Ruby language server for code intelligence and analysis",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/ruby-lsp",
+    "lspServers": {
+      "ruby-lsp": {
+        "command": "ruby-lsp",
+        "extensionToLanguage": {
+          ".rb": "ruby",
+          ".rake": "ruby",
+          ".gemspec": "ruby",
+          ".ru": "ruby",
+          ".erb": "erb"
+        }
+      }
+    }
+  },
+  {
+    "name": "rust-analyzer-lsp",
+    "version": "1.0.0",
+    "description": "Rust language server for code intelligence and analysis",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/rust-analyzer-lsp",
+    "lspServers": {
+      "rust-analyzer": {
+        "command": "rust-analyzer",
+        "extensionToLanguage": {
+          ".rs": "rust"
+        }
+      }
+    }
+  },
+  {
+    "name": "security-guidance",
+    "version": "2.0.21",
+    "description": "Security review for Claude-generated code. Pattern-based warnings on edits, LLM-powered diff review on Stop, and an agentic commit reviewer that catches injection, XSS, SSRF, hardcoded secrets, and 25+ other vulnerability classes.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/security-guidance",
+    "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance"
+  },
+  {
+    "name": "session-report",
+    "version": "1.0.0",
+    "description": "Generate an explorable HTML report of Claude Code session usage — tokens, cache efficiency, subagents, skills, and the most expensive prompts — from local ~/.claude/projects transcripts.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/session-report",
+    "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/session-report"
+  },
+  {
+    "name": "skill-creator",
+    "version": "1.0.0",
+    "description": "Create new skills, improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, update or optimize an existing skill, run evals to test a skill, or benchmark skill performance with variance analysis.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/skill-creator"
+  },
+  {
+    "name": "swift-lsp",
+    "version": "1.0.0",
+    "description": "Swift language server (SourceKit-LSP) for code intelligence",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/swift-lsp",
+    "lspServers": {
+      "sourcekit-lsp": {
+        "command": "sourcekit-lsp",
+        "extensionToLanguage": {
+          ".swift": "swift"
+        }
+      }
+    }
+  },
+  {
+    "name": "theme-examples",
+    "version": "0.6.0",
+    "description": "An example plugin to read, copy and change: thirty-eight animated backdrops behind the chat in the desktop app, with frosted-glass panels: one per project or per session. /custom-theme list names them. Fireworks go off over the theme when Claude says \"merged\"; /fireworks sets them off by hand.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/theme-examples",
+    "license": "Apache-2.0",
+    "types": "./types/index.d.ts"
+  },
+  {
+    "name": "typescript-lsp",
+    "version": "1.0.0",
+    "description": "TypeScript/JavaScript language server for enhanced code intelligence",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/plugins/typescript-lsp",
+    "lspServers": {
+      "typescript": {
+        "command": "typescript-language-server",
+        "args": [
+          "--stdio"
+        ],
+        "extensionToLanguage": {
+          ".ts": "typescript",
+          ".tsx": "typescriptreact",
+          ".js": "javascript",
+          ".jsx": "javascriptreact",
+          ".mts": "typescript",
+          ".cts": "typescript",
+          ".mjs": "javascript",
+          ".cjs": "javascript"
+        }
+      }
+    }
+  },
+  {
+    "name": "asana",
+    "version": "1.0.0",
+    "description": "Asana project management integration. Connects Claude Code to Asana's V2 MCP server (https://mcp.asana.com/v2/mcp) to create and manage tasks, search projects, update assignments, and track progress. Requires a one-time setup of your own Asana OAuth app — run /asana-setup after installing.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/asana"
+  },
+  {
+    "name": "context7",
+    "version": "1.0.0",
+    "description": "Upstash Context7 MCP server for up-to-date documentation lookup. Connects to Context7's hosted remote MCP server (https://mcp.context7.com/mcp) — no local Node.js or npx required — to pull version-specific documentation and code examples directly from source repositories into your LLM context. Authenticate with Context7 when prompted.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/context7"
+  },
+  {
+    "name": "discord",
+    "version": "0.0.6",
+    "description": "Discord channel for Claude Code — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /discord:access.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/discord",
+    "keywords": [
+      "discord",
+      "messaging",
+      "channel",
+      "mcp"
+    ]
+  },
+  {
+    "name": "fakechat",
+    "version": "0.0.1",
+    "description": "Localhost iMessage-style web chat for Claude Code — test surface with file upload and edits. No tokens, no access control.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/fakechat",
+    "keywords": [
+      "fakechat",
+      "web",
+      "localhost",
+      "testing",
+      "channel",
+      "mcp"
+    ]
+  },
+  {
+    "name": "firebase",
+    "version": "1.0.0",
+    "description": "Google Firebase MCP integration. Manage Firestore databases, authentication, cloud functions, hosting, and storage. Build and manage your Firebase backend directly from your development workflow.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/firebase"
+  },
+  {
+    "name": "github",
+    "version": "1.0.0",
+    "description": "Official GitHub MCP server for repository management. Create issues, manage pull requests, review code, search repositories, and interact with GitHub's full API directly from Claude Code.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/github"
+  },
+  {
+    "name": "gitlab",
+    "version": "1.0.0",
+    "description": "GitLab DevOps platform integration. Manage repositories, merge requests, CI/CD pipelines, issues, and wikis. Full access to GitLab's comprehensive DevOps lifecycle tools.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/gitlab"
+  },
+  {
+    "name": "imessage",
+    "version": "0.2.0",
+    "description": "iMessage channel for Claude Code — reads chat.db directly, sends via AppleScript. Built-in access control; manage pairing, allowlists, and policy via /imessage:access.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/imessage",
+    "keywords": [
+      "imessage",
+      "messaging",
+      "channel",
+      "mcp"
+    ]
+  },
+  {
+    "name": "laravel-boost",
+    "version": "1.0.0",
+    "description": "Laravel development toolkit MCP server. Provides intelligent assistance for Laravel applications including Artisan commands, Eloquent queries, routing, migrations, and framework-specific code generation.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/laravel-boost"
+  },
+  {
+    "name": "linear",
+    "version": "1.0.0",
+    "description": "Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/linear"
+  },
+  {
+    "name": "playwright",
+    "version": "1.0.0",
+    "description": "Browser automation and end-to-end testing MCP server by Microsoft. Enables Claude to interact with web pages, take screenshots, fill forms, click elements, and perform automated browser testing workflows.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/playwright"
+  },
+  {
+    "name": "serena",
+    "version": "1.0.0",
+    "description": "Semantic code analysis MCP server providing intelligent code understanding, refactoring suggestions, and codebase navigation through language server protocol integration.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/serena"
+  },
+  {
+    "name": "telegram",
+    "version": "0.0.7",
+    "description": "Telegram channel for Claude Code — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /telegram:access.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/telegram",
+    "keywords": [
+      "telegram",
+      "messaging",
+      "channel",
+      "mcp"
+    ]
+  },
+  {
+    "name": "terraform",
+    "version": "1.0.0",
+    "description": "The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development.",
+    "author": {
+      "name": "Anthropic (Adapted for Antigravity)"
+    },
+    "compatibility": "antigravity",
+    "originalSource": "anthropics/claude-plugins-official/external_plugins/terraform"
+  }
+]

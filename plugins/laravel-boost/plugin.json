@@ -1,0 +1,10 @@
+{
+  "name": "laravel-boost",
+  "version": "1.0.0",
+  "description": "Laravel development toolkit MCP server. Provides intelligent assistance for Laravel applications including Artisan commands, Eloquent queries, routing, migrations, and framework-specific code generation.",
+  "author": {
+    "name": "Anthropic (Adapted for Antigravity)"
+  },
+  "compatibility": "antigravity",
+  "originalSource": "anthropics/claude-plugins-official/external_plugins/laravel-boost"
+}

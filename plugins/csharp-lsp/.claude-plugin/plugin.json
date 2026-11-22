@@ -1,0 +1,18 @@
+{
+  "name": "csharp-lsp",
+  "version": "1.0.0",
+  "description": "C# language server for code intelligence",
+  "author": {
+    "name": "Anthropic (Adapted for Antigravity)"
+  },
+  "compatibility": "antigravity",
+  "originalSource": "anthropics/claude-plugins-official/plugins/csharp-lsp",
+  "lspServers": {
+    "csharp-ls": {
+      "command": "csharp-ls",
+      "extensionToLanguage": {
+        ".cs": "csharp"
+      }
+    }
+  }
+}

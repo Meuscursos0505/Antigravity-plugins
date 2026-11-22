@@ -1,0 +1,19 @@
+{
+  "name": "jdtls-lsp",
+  "version": "1.0.0",
+  "description": "Java language server (Eclipse JDT.LS) for code intelligence",
+  "author": {
+    "name": "Anthropic (Adapted for Antigravity)"
+  },
+  "compatibility": "antigravity",
+  "originalSource": "anthropics/claude-plugins-official/plugins/jdtls-lsp",
+  "lspServers": {
+    "jdtls": {
+      "command": "jdtls",
+      "extensionToLanguage": {
+        ".java": "java"
+      },
+      "startupTimeout": 120000
+    }
+  }
+}

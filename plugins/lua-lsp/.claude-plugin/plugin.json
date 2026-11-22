@@ -1,0 +1,18 @@
+{
+  "name": "lua-lsp",
+  "version": "1.0.0",
+  "description": "Lua language server for code intelligence",
+  "author": {
+    "name": "Anthropic (Adapted for Antigravity)"
+  },
+  "compatibility": "antigravity",
+  "originalSource": "anthropics/claude-plugins-official/plugins/lua-lsp",
+  "lspServers": {
+    "lua": {
+      "command": "lua-language-server",
+      "extensionToLanguage": {
+        ".lua": "lua"
+      }
+    }
+  }
+}

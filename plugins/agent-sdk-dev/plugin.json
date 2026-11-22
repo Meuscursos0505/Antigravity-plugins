@@ -1,0 +1,10 @@
+{
+  "name": "agent-sdk-dev",
+  "version": "1.0.1",
+  "description": "Claude Agent SDK Development Plugin",
+  "author": {
+    "name": "Anthropic (Adapted for Antigravity)"
+  },
+  "compatibility": "antigravity",
+  "originalSource": "anthropics/claude-plugins-official/plugins/agent-sdk-dev"
+}

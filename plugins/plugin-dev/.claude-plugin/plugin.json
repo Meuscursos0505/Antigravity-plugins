@@ -1,0 +1,10 @@
+{
+  "name": "plugin-dev",
+  "version": "0.1.2",
+  "description": "Plugin development toolkit with skills for creating agents, commands, hooks, MCP integrations, and comprehensive plugin structure guidance",
+  "author": {
+    "name": "Anthropic (Adapted for Antigravity)"
+  },
+  "compatibility": "antigravity",
+  "originalSource": "anthropics/claude-plugins-official/plugins/plugin-dev"
+}

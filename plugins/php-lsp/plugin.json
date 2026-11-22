@@ -1,0 +1,21 @@
+{
+  "name": "php-lsp",
+  "version": "1.0.0",
+  "description": "PHP language server (Intelephense) for code intelligence",
+  "author": {
+    "name": "Anthropic (Adapted for Antigravity)"
+  },
+  "compatibility": "antigravity",
+  "originalSource": "anthropics/claude-plugins-official/plugins/php-lsp",
+  "lspServers": {
+    "intelephense": {
+      "command": "intelephense",
+      "args": [
+        "--stdio"
+      ],
+      "extensionToLanguage": {
+        ".php": "php"
+      }
+    }
+  }
+}

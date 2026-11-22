@@ -1,0 +1,5 @@
+# github
+
+Adapted for Antigravity.
+
+Description: Official GitHub MCP server for repository management. Create issues, manage pull requests, review code, search repositories, and interact with GitHub's full API directly from Claude Code.
